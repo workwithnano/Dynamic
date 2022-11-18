@@ -6,7 +6,7 @@
 
 import Foundation
 
-class Invocation: Loggable {
+public class Invocation: Loggable {
     public static var loggingEnabled: Bool = false
     var loggingEnabled: Bool { Self.loggingEnabled }
 
