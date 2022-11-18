@@ -13,7 +13,7 @@ public class Invocation: Loggable {
     private let target: NSObject
     private let selector: Selector
 
-    var invocation: NSObject?
+    public var invocation: NSObject?
 
     var numberOfArguments: Int = 0
     var returnLength: Int = 0
@@ -35,7 +35,7 @@ public class Invocation: Loggable {
     }()
     private(set) var isInvoked: Bool = false
 
-    init(target: NSObject, selector: Selector) throws {
+    public init(target: NSObject, selector: Selector) throws {
         self.target = target
         self.selector = selector
 
