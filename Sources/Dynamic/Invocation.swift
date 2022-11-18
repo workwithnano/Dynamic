@@ -143,7 +143,7 @@ public class Invocation: Loggable {
         }
     }
 
-    func invoke() {
+    public func invoke() {
         guard let invocation = invocation, !isInvoked else { return }
 
         log("Invoking...")
