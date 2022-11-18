@@ -30,7 +30,7 @@ public class Invocation: Loggable {
         /// `v` is the type encoding for Void
         returnTypeString != "v"
     }
-    lazy var returnedObject: AnyObject? = {
+    public lazy var returnedObject: AnyObject? = {
         returnedObjectValue()
     }()
     private(set) var isInvoked: Bool = false
